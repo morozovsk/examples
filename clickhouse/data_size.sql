@@ -1,4 +1,4 @@
--- by tables:
+-- by columns:
 SELECT
     table, name,
     formatReadableSize(data) AS size
@@ -13,7 +13,7 @@ FROM
     ORDER BY data DESC
 );
 
--- by columns:
+-- by tables:
 SELECT
     table,
     formatReadableSize(data) AS size
